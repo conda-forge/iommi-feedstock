@@ -1,5 +1,5 @@
 {% set name = "iommi" %}
-{% set version = "7.9.1" %}
+{% set version = "7.10.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/iommi-{{ version }}.tar.gz
-  sha256: 40dc41a3da8048c0607e8dcffc9b87b0afd8ec8d64d52ee2e3b30874078159ab
+  sha256: 1d062ea0b91b7bd94bfea87587b99d00c600df589ba0321d08e9a4c71495e169
 
 build:
   noarch: python
