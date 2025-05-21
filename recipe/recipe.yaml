@@ -1,0 +1,46 @@
+schema_version: 1
+
+context:
+  name: iommi
+  version: 7.14.0
+
+package:
+  name: ${{ name|lower }}
+  version: ${{ version }}
+
+source:
+  url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/iommi-${{ version }}.tar.gz
+  sha256: c28583997c0ab4c6771d7bcd5099283b45e605a7df854ebc6a4030723157d6fe
+
+build:
+  number: 0
+  noarch: python
+  script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
+
+requirements:
+  host:
+    - python ${{ python_min }}.*
+    - pip
+    - setuptools
+  run:
+    - python >=${{ python_min }}
+    - django >=3.2
+    - pyparsing
+
+tests:
+  - python:
+      imports:
+        - iommi
+      pip_check: true
+      python_version: ${{ python_min }}.*
+
+about:
+  summary: iommi is a high level framework built on django
+  license: BSD-3-Clause
+  license_file: LICENSE
+  homepage: https://github.com/iommirocks/iommi
+  documentation: https://docs.iommi.rocks/en/latest/
+
+extra:
+  recipe-maintainers:
+    - thewchan
