@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: iommi
-  version: "7.14.2"
+  version: "7.14.3"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/iommi-${{ version }}.tar.gz
-  sha256: 4bca9f08ddb7100584df6b8fd12129af5c7a1231bfa563e1494f589746860e5a
+  sha256: a73c431decf7b9654bbfde994ca723215a2cb1e122b83c62fdcb17877cfe487e
 
 build:
   number: 0
