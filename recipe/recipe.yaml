@@ -3,6 +3,7 @@ schema_version: 1
 context:
   name: iommi
   version: "7.19.0"
+  # Not speficied upstream but uses code that is only supported in 3.12+
   python_min: "3.12"
 
 package:
