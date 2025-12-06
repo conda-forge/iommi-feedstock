@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: iommi
-  version: "7.21.2"
+  version: "7.21.3"
   # Not speficied upstream but uses code that is only supported in 3.12+
   python_min: "3.12"
 
@@ -12,7 +12,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/iommi-${{ version }}.tar.gz
-  sha256: 657418e1d5a03a02647ce7255c53aff194922940b83449427924acdd42775303
+  sha256: 3a0feed5ed86fdca40690d91bf26d647095642f4fd1423e9bafe53b7eefc6c04
 
 build:
   number: 0
