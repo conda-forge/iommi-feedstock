@@ -27,7 +27,7 @@ requirements:
     - wheel
   run:
     - python >=${{ python_min }}
-    - django >=3.2
+    - django >=5.2
     - pyparsing
 
 tests:
