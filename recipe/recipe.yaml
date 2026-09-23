@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: iommi
-  version: "7.31.0"
+  version: "7.32.2"
   # Not speficied upstream but uses code that is only supported in 3.12+
   python_min: "3.12"
 
@@ -12,7 +12,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/iommi-${{ version }}.tar.gz
-  sha256: 80f29b85c4c868f525fa4f4cf38ee2731ee949ce1ec2fd0d8bc5959359330d71
+  sha256: 736979f1d5223692deb94feb5715c7b4f905bdf9823bd694aca35402d2716888
 
 build:
   number: 0
@@ -27,7 +27,7 @@ requirements:
     - wheel
   run:
     - python >=${{ python_min }}
-    - django >=3.2
+    - django >=5.2
     - pyparsing
 
 tests:
